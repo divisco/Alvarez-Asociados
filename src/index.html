@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Alvarez & Asociados - Estudio Contable líder fundado en 1986. Servicios en el ámbito laboral, contabilidad, impositivo, finanzas y consultoría.">
+    <title>Alvarez & Asociados | Estudio Contable</title>
+    <!-- Modern Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container container">
+            <a href="#" class="logo">
+                <img src="assets/logoAA.webp" alt="Alvarez & Asociados Logo">
+            </a>
+            <button class="mobile-toggle" aria-label="Abrir menú" id="mobile-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#contacto" class="btn btn-outline" style="margin-left: 1rem;">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="hero" class="hero section">
+        <div class="hero-overlay"></div>
+        <div class="hero-content container reveal fade-up">
+            <h1 class="hero-title-main">ALVAREZ & ASOCIADOS<br><span class="hero-title-sub">Estudio contable</span></h1>
+            
+            <hr class="hero-separator">
+            
+            <h2 class="hero-tagline">Soluciones Contables Modernas para tu Crecimiento</h2>
+            <p class="hero-subtitle">Trabajamos con compromiso y seriedad para brindarle el éxito y tranquilidad a su
+                empresa con nuestra experiencia de más de 35 años.</p>
+            <div class="hero-actions">
+                <a href="#contacto" class="btn btn-primary btn-lg">Contactanos Hoy</a>
+                <a href="#servicios" class="btn btn-text">Nuestros servicios <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+        <!-- Decorative abstract background forms -->
+        <div class="bg-shape shape-1"></div>
+        <div class="bg-shape shape-2"></div>
+    </header>
+
+    <!-- About Section -->
+    <section id="nosotros" class="about section">
+        <div class="container reveal fade-in">
+            <div class="about-grid">
+                <div class="about-text">
+                    <h2 class="section-title">Sobre <span class="text-accent">Nosotros</span></h2>
+                    <p class="lead">Somos ALVAREZ&ASOCIADOS, estudio fundado en 1986.</p>
+                    <p>Contando con más de 35 años de experiencia ininterrumpida en el mercado, donde nos preocupamos y
+                        ocupamos para trabajar con compromiso y seriedad, para brindarles a nuestros clientes el
+                        servicio de calidad que ellos merecen.</p>
+                    <p>Gracias a nuestra dedicación, logramos un constante crecimiento, lo cual nos permitió
+                        posicionarnos como un Estudio Contable líder con nuestros clientes, quienes valoran el
+                        profesionalismo y el vínculo cercano que establecemos con ellos.</p>
+
+                    <div class="stats">
+                        <div class="stat-item">
+                            <span class="stat-number">35+</span>
+                            <span class="stat-label">Años Experiencia</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number"><i class="fas fa-award"></i></span>
+                            <span class="stat-label">Profesionalismo</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number"><i class="fas fa-handshake"></i></span>
+                            <span class="stat-label">Vínculo Cercano</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="image-wrapper glass-panel">
+                        <div class="abstract-graphic">
+                            <div class="graph-bar b1"></div>
+                            <div class="graph-bar b2"></div>
+                            <div class="graph-bar b3"></div>
+                            <div class="graph-bar b4"></div>
+                            <div class="graph-line"></div>
+                            <i class="fas fa-chart-line graphic-icon text-accent"></i>
+                        </div>
+                        <div class="glass-float f1">
+                            <i class="fas fa-balance-scale"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="servicios" class="services section bg-light">
+        <div class="container reveal fade-up">
+            <h2 class="section-title text-center">Nuestros <span class="text-accent">Servicios</span></h2>
+            <p class="section-subtitle text-center">Ofrecemos soluciones integrales adaptadas a las necesidades
+                específicas de su empresa o negocio de la mano de expertos.</p>
+
+            <div class="services-wrapper">
+                <!-- Tab Headers -->
+                <div class="service-tabs" id="serviceTabs">
+                    <button class="tab-btn active" data-target="tab-laboral">
+                        <i class="fas fa-user-friends"></i> Laboral
+                    </button>
+                    <button class="tab-btn" data-target="tab-contabilidad">
+                        <i class="fas fa-calculator"></i> Contabilidad
+                    </button>
+                    <button class="tab-btn" data-target="tab-impositivo">
+                        <i class="fas fa-file-invoice-dollar"></i> Impositivo
+                    </button>
+                    <button class="tab-btn" data-target="tab-finanzas">
+                        <i class="fas fa-chart-pie"></i> Finanzas
+                    </button>
+                    <button class="tab-btn" data-target="tab-consultorias">
+                        <i class="fas fa-lightbulb"></i> Consultorías
+                    </button>
+                </div>
+
+                <!-- Tab Contents -->
+                <div class="tab-content-container glass-panel-flat">
+                    <!-- Laboral -->
+                    <div class="tab-pane active" id="tab-laboral">
+                        <div class="pane-header">
+                            <h3>En lo laboral</h3>
+                        </div>
+                        <ul class="service-list">
+                            <li><i class="fas fa-check-circle text-accent"></i> <span>Liquidación de sueldos, jornales y
+                                    cargas sociales</span></li>
+                            <li><i class="fas fa-check-circle text-accent"></i> <span>Confección y presentación de
+                                    declaraciones juradas y boletas de sindicatos</span></li>
+                            <li><i class="fas fa-check-circle text-accent"></i> <span>Emisión de recibos de haberes y
+                                    registración en el libro de sueldos</span></li>
+                            <li><i class="fas fa-check-circle text-accent"></i> <span>Liquidaciones finales</span></li>
+                            <li><i class="fas fa-check-circle text-accent"></i> <span>Inscripciones varias, altas y
+                                    bajas de empleados, confección de certificaciones de servicios</span></li>
+                            <li><i class="fas fa-check-circle text-accent"></i> <span>Asistencia en la atención de
+                                    inspecciones y requerimientos</span></li>
+                            <li><i class="fas fa-check-circle text-accent"></i> <span>Asesoramiento proactivo sobre los
+                                    distintos Convenios Colectivos de Trabajo de la actividad</span></li>
+                            <li><i class="fas fa-check-circle text-accent"></i> <span>Asesoramiento en el trámite de
+                                    rúbrica de libros</span></li>
+                            <li><i class="fas fa-check-circle text-accent"></i> <span>Gestión de Firma Digital</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Contabilidad -->
+                    <div class="tab-pane" id="tab-contabilidad">
+                        <div class="pane-header">
+                            <h3>En contabilidad</h3>
+                        </div>
+                        <ul class="service-list">
+                            <li><i class="fas fa-check-circle text-accent"></i> <span>Auditoría externa de estados
+                                    contables</span></li>
+                            <li><i class="fas fa-check-circle text-accent"></i> <span>Análisis de sistemas de control
+                                    interno</span></li>
+                            <li><i class="fas fa-check-circle text-accent"></i> <span>Realización de pericias
+                                    contables</span></li>
+                            <li><i class="fas fa-check-circle text-accent"></i> <span>Asesoramiento en aspectos
+                                    contables y regulatorios</span></li>
+                            <li><i class="fas fa-check-circle text-accent"></i> <span>Certificaciones contables y
+                                    verificaciones</span></li>
+                            <li><i class="fas fa-check-circle text-accent"></i> <span>Auditoría acerca de la veracidad y
+                                    razonabilidad de la información financiero-contable de la empresa</span></li>
+                            <li><i class="fas fa-check-circle text-accent"></i> <span>Ordenamiento y cotejo de la
+                                    información para la elaboración del balance anual</span></li>
+                        </ul>
+                    </div>
+
+                    <!-- Impositivo -->
+                    <div class="tab-pane" id="tab-impositivo">
+                        <div class="pane-header">
+                            <h3>En lo impositivo</h3>
+                        </div>
+                        <ul class="service-list">
+                            <li><i class="fas fa-check-circle text-accent"></i> <span>Consultoría fiscal. Ofrecemos
+                                    asistencia en la toma de decisiones ya que, directa o indirectamente, tienen
+                                    consecuencias tributarias...</span></li>
+                            <li><i class="fas fa-check-circle text-accent"></i> <span>Due Diligence. Evaluamos
+                                    globalmente la empresa...</span></li>
+                            <li><i class="fas fa-check-circle text-accent"></i> <span>Asistencia integral frente a
+                                    procesos de reorganizaciones societarias...</span></li>
+                            <li><i class="fas fa-check-circle text-accent"></i> <span>Determinación y revisión del
+                                    Impuesto Diferido</span></li>
+                            <li><i class="fas fa-check-circle text-accent"></i> <span>Análisis de estructuras
+                                    societarias y operaciones...</span></li>
+                            <li><i class="fas fa-check-circle text-accent"></i> <span>Liquidación y/o revisión de
+                                    declaraciones juradas de impuestos...</span></li>
+                            <li><i class="fas fa-check-circle text-accent"></i> <span>Interposición de recursos por
+                                    ajustes...</span></li>
+                            <li><i class="fas fa-check-circle text-accent"></i> <span>Preparación de solicitudes de
+                                    reembolsos...</span></li>
+                            <li><i class="fas fa-check-circle text-accent"></i> <span>Análisis de recuperación de
+                                    créditos fiscales...</span></li>
+                            <li><i class="fas fa-check-circle text-accent"></i> <span>Asesoramiento en materia de
+                                    regímenes de promoción...</span></li>
+                            <li><i class="fas fa-check-circle text-accent"></i> <span>Atención de inspecciones de los
+                                    organismos fiscales</span></li>
+                            <li><i class="fas fa-check-circle text-accent"></i> <span>Mantenemos a nuestros clientes
+                                    actualizados</span></li>
+                        </ul>
+                    </div>
+
+                    <!-- Finanzas -->
+                    <div class="tab-pane" id="tab-finanzas">
+                        <div class="pane-header">
+                            <h3>En las finanzas</h3>
+                        </div>
+                        <ul class="service-list">
+                            <li><i class="fas fa-check-circle text-accent"></i> <span>Análisis de proyectos de
+                                    inversión</span></li>
+                            <li><i class="fas fa-check-circle text-accent"></i> <span>Reestructuración de pasivos</span>
+                            </li>
+                            <li><i class="fas fa-check-circle text-accent"></i> <span>Reversión de empresa en
+                                    crisis</span></li>
+                            <li><i class="fas fa-check-circle text-accent"></i> <span>Búsqueda de Inversores...</span>
+                            </li>
+                            <li><i class="fas fa-check-circle text-accent"></i> <span>Gestión de créditos y subsidios
+                                    ante organismos...</span></li>
+                            <li><i class="fas fa-check-circle text-accent"></i> <span>Gestión y calificación ante
+                                    entidades bancarias...</span></li>
+                            <li><i class="fas fa-check-circle text-accent"></i> <span>Asesoramiento en Leasing</span>
+                            </li>
+                            <li><i class="fas fa-check-circle text-accent"></i> <span>Obtención de financiamiento</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Consultorías -->
+                    <div class="tab-pane" id="tab-consultorias">
+                        <div class="pane-header">
+                            <h3>En consultorías</h3>
+                        </div>
+                        <ul class="service-list">
+                            <li><i class="fas fa-check-circle text-accent"></i> <span>Los vertiginosos cambios
+                                    económicos, políticos, tecnológicos y de regulaciones...</span></li>
+                            <li><i class="fas fa-check-circle text-accent"></i> <span>Desempeño operacional y gestión de
+                                    costos...</span></li>
+                            <li><i class="fas fa-check-circle text-accent"></i> <span>Consultoría y reingeniería de
+                                    procesos internos de las empresas</span></li>
+                            <li><i class="fas fa-check-circle text-accent"></i> <span>Estrategia de crecimiento</span>
+                            </li>
+                            <li><i class="fas fa-check-circle text-accent"></i> <span>Estrategia para fusiones y
+                                    adquisiciones</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Map Section -->
+    <section id="contacto" class="contact section">
+        <div class="container reveal fade-up">
+            <h2 class="section-title text-center">Nuestro <span class="text-accent">Contacto</span></h2>
+            <p class="section-subtitle text-center">Estamos a disposición para escucharlo, envíenos su consulta.</p>
+
+            <div class="contact-grid">
+                <!-- Info & Form -->
+                <div class="contact-card glass-panel-flat">
+                    <form class="contact-form" id="contactForm">
+                        <h3 class="form-title">Escribinos un mensaje</h3>
+                        <div class="form-group">
+                            <label for="nombre">Nombre</label>
+                            <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre completo">
+                        </div>
+                        <div class="form-group">
+                            <label for="telefono">Teléfono</label>
+                            <input type="tel" id="telefono" name="telefono" required
+                                placeholder="Tu número de teléfono">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required placeholder="tu@email.com">
+                        </div>
+                        <div class="form-group form-full">
+                            <label for="mensaje">Mensaje</label>
+                            <textarea id="mensaje" name="mensaje" rows="4" required
+                                placeholder="¿En qué te podemos ayudar?"></textarea>
+                        </div>
+                        <div class="form-full">
+                            <button type="submit" class="btn btn-primary btn-submit btn-block">
+                                <span>Enviar Consulta</span>
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </div>
+                        <p class="form-messages" id="formMessages"></p>
+                    </form>
+                </div>
+
+                <!-- Contact Info & Map -->
+                <div class="contact-info-wrapper">
+                    <div class="contact-info-boxes">
+                        <div class="info-box">
+                            <div class="info-icon"><i class="fas fa-map-marker-alt"></i></div>
+                            <div class="info-content">
+                                <h4>Ubicación</h4>
+                                <p>Mendoza 1439, Villa María, Córdoba. 5900</p>
+                            </div>
+                        </div>
+                        <div class="info-box">
+                            <div class="info-icon"><i class="fas fa-envelope"></i></div>
+                            <div class="info-content">
+                                <h4>Email</h4>
+                                <p>info@alvarezyasociados.com.ar</p>
+                            </div>
+                        </div>
+                        <div class="info-box">
+                            <div class="info-icon"><i class="fas fa-phone-alt"></i></div>
+                            <div class="info-content">
+                                <h4>Teléfono</h4>
+                                <p>+54 9 3536 56-0181</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="map-panel glass-panel-flat">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3368.282603281033!2d-63.23986352343557!3d-32.41158734506704!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95cc42e88e6d9f23%3A0x469694ba8fdca40a!2sAlvarez%20%26%20Asociados!5e0!3m2!1ses!2sar!4v1774660970066!5m2!1ses!2sar"
+                            width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <img src="assets/logoFooter.png" alt="Alvarez & Asociados Footer Logo" class="footer-logo">
+                <p>Más de 35 años trabajando con compromiso, seriedad y calidad para nuestros clientes.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-links">
+                <h3>Enlaces Rápidos</h3>
+                <ul>
+                    <li><a href="#hero">Inicio</a></li>
+                    <li><a href="#nosotros">Nosotros</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-contact">
+                <h3>Información</h3>
+                <p><i class="fas fa-map-marker-alt text-accent"></i> Mendoza 1439, Villa María, Córdoba. 5900</p>
+                <p><i class="fas fa-envelope text-accent"></i> info@alvarezyasociados.com.ar</p>
+                <p><i class="fas fa-phone-alt text-accent"></i> +54 9 3536 56-0181</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2026 Alvarez & Asociados. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp FAB -->
+    <a href="https://api.whatsapp.com/send/?phone=5493536560181&text&type=phone_number&app_absent=0"
+        class="fab-whatsapp" target="_blank" rel="noopener noreferrer" aria-label="Contactar por WhatsApp">
+        <div class="fab-pulse"></div>
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Scripts -->
+    <script src="main.js"></script>
+</body>
+
+</html>
