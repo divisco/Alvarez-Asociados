@@ -42,15 +42,26 @@ html {
 }
 
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
   color: var(--color-text-dark);
   background-color: var(--color-bg-white);
   line-height: 1.6;
   overflow-x: hidden;
 }
 
-h1, h2, h3, h4, h5, h6, .section-title, .logo {
-  font-family: 'Playfair Display', serif;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.section-title,
+.logo {
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
 }
 
 a {
@@ -255,6 +266,7 @@ img {
   min-height: 100vh;
   display: flex;
   align-items: center;
+  justify-content: center;
   padding-top: 80px;
   /* Accounts for navbar */
   overflow: hidden;
@@ -274,7 +286,9 @@ img {
 .hero-content {
   position: relative;
   z-index: 2;
-  max-width: 800px;
+  width: 100%;
+  max-width: 1200px;
+  text-align: center;
 }
 
 .badge {
@@ -291,11 +305,19 @@ img {
 }
 
 .hero-title-main {
-  font-family: 'Playfair Display', serif;
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
   font-size: clamp(3rem, 6vw, 5.5rem);
   font-weight: 800;
   line-height: 1.1;
-  color: var(--color-primary);
+  color: #ffffff;
+  text-shadow: 
+    -1px -1px 0px var(--color-primary),
+     1px -1px 0px var(--color-primary),
+    -1px  1px 0px var(--color-primary),
+     1px  1px 0px var(--color-primary),
+     3px  3px 10px rgba(122, 0, 22, 0.6);
   margin-bottom: 0px;
   letter-spacing: -1px;
 }
@@ -314,12 +336,14 @@ img {
   height: 4px;
   background-color: var(--color-primary);
   border: none;
-  margin: 2rem 0;
+  margin: 2rem auto;
   border-radius: 2px;
 }
 
 .hero-tagline {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
   font-size: clamp(1.2rem, 2.5vw, 1.8rem);
   font-weight: 600;
   color: var(--color-text-dark);
@@ -331,11 +355,14 @@ img {
   color: var(--color-text-light);
   margin-bottom: 2.5rem;
   max-width: 650px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .hero-actions {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 1.5rem;
   flex-wrap: wrap;
 }
@@ -912,6 +939,11 @@ textarea:focus {
 }
 
 /* Media Queries */
+@media (min-width: 992px) {
+  .hero-title-main {
+    white-space: nowrap;
+  }
+}
 @media (max-width: 992px) {
   .hero-title {
     font-size: 3rem;
